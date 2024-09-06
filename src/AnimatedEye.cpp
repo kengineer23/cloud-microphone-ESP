@@ -46,14 +46,16 @@ void AnimatedEye::blink() {
  * boundary thickness. Each eye is drawn with a rounded rectangle to represent 
  * the eye shape.
  */
+/*
 void AnimatedEye::moveEyes(){
-  eyeX1 += random(-5,5);
-  eyeX2 += random(-5,5);
+  eyeX1 += random(-2,2);
+  eyeX2 += random(-2,2);
 }
+*/
 void AnimatedEye::drawEyes() {
   int eyeRadius = eyeWidth / 2; ///< Radius for the rounded corners
 
-  moveEyes();
+  //moveEyes();
 
   // Draw first eye (capsule shape with thick boundary)
   for (int i = 0; i < thickness; i++) {
